@@ -1,5 +1,5 @@
-# This Python file uses the following encoding: utf-8
 import sys
+from pymata4 import pymata4 as arduino
 
 from PySide6.QtWidgets import QApplication, QWidget
 
@@ -8,6 +8,13 @@ from PySide6.QtWidgets import QApplication, QWidget
 #     pyside6-uic form.ui -o ui_form.py, or
 #     pyside2-uic form.ui -o ui_form.py
 from ui_form import Ui_Widget
+
+class Board():
+    def __init__(self, *motor):
+        self.board = arduino.Pymata4()
+        self.motor = motor
+        for pin in motor:
+            self.board.set_pin_mode_pwm_output(pin)
 
 class Widget(QWidget):
     def __init__(self, parent=None):
