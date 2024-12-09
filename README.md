@@ -5,7 +5,7 @@ Control de giro de un motor DC con un puente H, Arduino y Python.
 
 ## Requisitos
 
-[FirmataExpress](https://github.com/MrYsLab/FirmataExpress)
+[FirmataExpress](https://mryslab.github.io/pymata4/firmata_express/#installation-instructions)
 
 ### Librerías de Python
 
