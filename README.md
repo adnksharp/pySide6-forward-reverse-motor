@@ -16,6 +16,15 @@ Control de giro de un motor DC con un puente H, Arduino y Python.
 pip install -r requirements.txt
 ```
 
+### Hardware usado
+
+| ![](https://i.imgur.com/AjvL7W4.png) | ![](https://i.imgur.com/S6z3rQN.png) |
+|----|----|
+
+- Placa de Arduino MEGA 2560
+- Controlador de motores L298N
+- Motor DC 12V 
+
 ## Características
 - Control de un motor CC con un puente H y dos salidas PWM.
 - Configuración del pulso modulado de salida mediante un `slider` y un `spin box`.
@@ -26,4 +35,4 @@ pip install -r requirements.txt
 > [!TIP]
 >
 > - `slider` personalizado (rotativo).
-> - Diagrama electronico del proyecto.
+
